@@ -16,18 +16,21 @@
   </div>
 
   <!-- イラスト表示エリア -->
-  <div id="image-area">
-    <img id="image" src="" alt="illustration" style="visibility: hidden;" />
-  </div>
-
-  <!-- イラスト表示ボタン -->
-<button id="show-image-btn" onclick="showImage()" style="display:none;">Show image</button>
+<div id="image-area">
+  <img id="image" src="" alt="illustration" style="visibility: hidden;" />
 </div>
-  <!-- ナビゲーションボタン -->
-  <div id="nav-buttons">
-    <button class="nav" onclick="prevWord()">← Prev</button>
-    <button class="nav" onclick="nextWord()">Next →</button>
-  </div>
+
+<!-- イラスト表示ボタン -->
+<div id="show-btn-area">
+  <button id="show-image-btn" onclick="showImage()" style="display:none;">Show image</button>
+</div>
+
+<!-- ナビゲーションボタン -->
+<div id="nav-buttons">
+  <button class="nav" onclick="prevWord()">← Prev</button>
+  <button class="nav" onclick="nextWord()">Next →</button>
+</div>
+
 
   <!-- JavaScript -->
   <script src="script.js"></script>
