@@ -151,8 +151,10 @@ function nextWord() {
 function showImage() {
   const imageEl = document.getElementById("image");
   const showBtn = document.getElementById("show-image-btn");
+  const wordData = data[current];
+  
   imageEl.src = currentWordData.image || "";
-  imageEl.style.display = "block";
+  imageEl.style.display = "visible";
   showBtn.style.display = "none";
 }
 
