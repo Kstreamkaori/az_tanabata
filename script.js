@@ -155,6 +155,7 @@ function showImage() {
   
   imageEl.src = wordData.image || "";
   imageEl.style.display = "visible";
+  imageEl.style.display = "block";
   showBtn.style.display = "none";
 }
 
