@@ -1,7 +1,7 @@
 body {
   font-family: 'Andika', sans-serif;
   text-align: center;
-  background-color: #e0f7fa; /* ほんのりたまご色 */
+  background: #e0f7fa; /* CUD風のやさしい水色 */
   color: #333; /* インスタの文字色と統一！ */
   padding: 2em;
 }
