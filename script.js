@@ -133,9 +133,10 @@ function showWord() {
   const wordData = data[current];
 
   wordEl.innerHTML = "";
+  imageEl.src = ""; // ← ★ここで前の画像をリセット！
   imageEl.style.visibility = "hidden";
 
-  // 👇 追加（スペースを残してボタン非表示にしない）
+  // ↓ 追加（スペースを残してボタン非表示にしない）
   showBtn.style.visibility = "visible";
 
   typeWriter(wordData, function () {
