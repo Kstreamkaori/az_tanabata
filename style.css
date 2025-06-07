@@ -13,13 +13,14 @@ body {
 }
 
 #image-area {
-  margin-top: 0; /* ← ここ追加 */
+  margin-top: 20px; /* ← ここ追加 */
 }
 
 #image-area img {
   width: 200px;
   height: auto;
-  margin: 0 0 10px 0;  /* 下に少しだけスペース残す */
+  margin: 0 auto 10px auto;  /* 下に少しだけスペース残す */
+  display: block;
   visibility: hidden;
 }
 
