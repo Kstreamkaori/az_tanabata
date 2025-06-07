@@ -164,6 +164,7 @@ function typeWriter(wordData, callback) {
       setTimeout(type, 600);
     } else {
       if (typeof callback === "function") callback();
+      document.getElementById("show-image-btn").style.display = "block"; // タイプ完了後ボタン出す
     }
   }
 
