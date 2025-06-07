@@ -154,8 +154,8 @@ function showImage() {
   const wordData = data[current];
   
   imageEl.src = wordData.image || "";
-  imageEl.style.visibility = "visible";
   imageEl.style.display = "block";
+  imageEl.style.visibility = "visible";
   showBtn.style.display = "none";
 }
 
