@@ -156,7 +156,7 @@ function showImage() {
   imageEl.src = wordData.image || "";
   imageEl.style.display = "block";
   imageEl.style.visibility = "visible";
-  showBtn.style.display = "hidden";
+  showBtn.style.visibility = "hidden";
 }
 
 function typeWriter(wordData, callback) {
