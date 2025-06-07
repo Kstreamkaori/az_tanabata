@@ -161,7 +161,7 @@ function typeWriter(wordData, callback) {
     if (i < chunks.length) {
       wordEl.innerHTML += chunks[i];
       i++;
-      setTimeout(type, 500);
+      setTimeout(type, 600);
     } else {
       if (typeof callback === "function") callback();
     }
