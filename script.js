@@ -151,6 +151,13 @@ function nextWord() {
   current = (current + 1) % data.length;
   showWord();
 }
+function showImage() {
+  const imageEl = document.getElementById("image");
+  const showBtn = document.getElementById("show-image-btn");
+  imageEl.src = currentWordData.image || "";
+  imageEl.style.display = "block";
+  showBtn.style.display = "none";
+}
 
 function typeWriter(wordData, callback) {
   const wordEl = document.getElementById("word");
