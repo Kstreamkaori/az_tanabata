@@ -64,6 +64,9 @@ button.nav:hover {
 }
 
 #show-image-btn {
+  visibility: hidden;         /* ← ボタンを隠すけどスペースは確保 */
+  display: inline-block;      /* ← 中央寄せのために block → inline-block に */
+  margin: 0 auto;
   background-color: #f9d390;  /* たまご色 */
   color: #333;
   border: none;
@@ -71,6 +74,5 @@ button.nav:hover {
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
-  display: block;
-  margin: 0 auto;
 }
+
