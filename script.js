@@ -153,7 +153,7 @@ function showImage() {
   const showBtn = document.getElementById("show-image-btn");
   const wordData = data[current];
   
-  imageEl.src = WordData.image || "";
+  imageEl.src = wordData.image || "";
   imageEl.style.display = "visible";
   showBtn.style.display = "none";
 }
