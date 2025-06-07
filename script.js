@@ -135,10 +135,7 @@ function showWord() {
   imageEl.style.visibility = "hidden";
 
   typeWriter(wordData, function () {
-    imageEl.src = wordData.image;
-    imageEl.onload = () => {
-      imageEl.style.visibility = "visible";
-    };
+    
   });
 }
 
