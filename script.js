@@ -129,15 +129,21 @@ let current = 0;
 function showWord() {
   const wordEl = document.getElementById("word");
   const imageEl = document.getElementById("image");
+  const showBtn = document.getElementById("show-image-btn");
   const wordData = data[current];
 
   wordEl.innerHTML = "";
   imageEl.style.visibility = "hidden";
 
+  // 👇 追加（スペースを残してボタン非表示にしない）
+  showBtn.style.visibility = "visible";
+
   typeWriter(wordData, function () {
-    
+    // 絵を見るボタンが出る処理
+    document.getElementById("show-image-btn").style.display = "block";
   });
 }
+
 
 function prevWord() {
   current = (current - 1 + data.length) % data.length;
