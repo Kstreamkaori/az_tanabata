@@ -42,7 +42,7 @@ function showWord() {
 
 function playSound() {
   const wordData = data[current];
-  const audio = new Audio(wordData.sound);
+  const audio = new Audio(`sounds/${wordData.sound}`);
   audio.play();
 }
 
