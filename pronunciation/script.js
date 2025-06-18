@@ -1,5 +1,4 @@
 const data = [
-
   { word: "clips", sound: "clips.mp3" },
   { word: "fog", sound: "fog.mp3" },
   { word: "frog", sound: "frog.mp3" },
@@ -7,7 +6,7 @@ const data = [
   { word: "in", sound: "in.mp3" },
   { word: "is", sound: "is.mp3" },
   { word: "kid", sound: "kid.mp3" },
-   { word: "off", sound: "off.mp3", chunks: ["o", "ff"] },
+  { word: "off", sound: "off.mp3", chunks: ["o", "ff"] },
   { word: "pen", sound: "pen.mp3" },
   { word: "picks", sound: "picks.mp3", chunks: ["p", "i", "ck", "s"] },
   { word: "pin", sound: "pin.mp3" },
@@ -16,13 +15,12 @@ const data = [
   { word: "taps", sound: "taps.mp3" },
   { word: "tin", sound: "tin.mp3" },
   { word: "up", sound: "up_tanabata.mp3" },
-  // --- フェイク語（ここから） ---
+
+  // --- フェイク語 ---
   { word: "fop", sound: "fop.mp3", isFake: true },
   { word: "bin", sound: "bin.mp3", isFake: true },
   { word: "pet", sound: "pet.mp3", isFake: true },
   { word: "bocket", sound: "bocket.mp3", isFake: true }
-
-
 ];
 
 let current = 0;
@@ -37,13 +35,11 @@ function showWord() {
   typeWriter(wordData);
 }
 
-
 function playSound() {
   const wordData = data[current];
   const audio = new Audio(`sounds/${wordData.sound}`);
   audio.play();
 }
-
 
 function prevWord() {
   current = (current - 1 + data.length) % data.length;
@@ -74,7 +70,4 @@ function typeWriter(wordData, callback) {
   type();
 }
 
-
-
 window.onload = showWord;
-
