@@ -51,16 +51,6 @@ function nextWord() {
   current = (current + 1) % data.length;
   showWord();
 }
-function showImage() {
-  const imageEl = document.getElementById("image");
-  const showBtn = document.getElementById("show-image-btn");
-  const wordData = data[current];
-  
-  imageEl.src = wordData.image || "";
-  imageEl.style.display = "block";
-  imageEl.style.visibility = "visible";
-  showBtn.style.visibility = "hidden";
-}
 
 function typeWriter(wordData, callback) {
   const wordEl = document.getElementById("word");
@@ -80,6 +70,13 @@ function typeWriter(wordData, callback) {
 
   type();
 }
+
+function playSound() {
+  const wordData = data[current];
+  const audio = new Audio(`sounds/${wordData.sound}`);
+  audio.play();
+}
+
 
 window.onload = showWord;
 
