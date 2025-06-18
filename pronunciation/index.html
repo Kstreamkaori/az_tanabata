@@ -11,22 +11,23 @@
   <h1>Let's Read!</h1>
 
   <!-- 単語表示エリア -->
-  <div id="word-area">
-    <div id="word"></div>
-  </div>
+<div id="word-area">
+  <div id="word"></div>
+</div>
 
-  <!-- 🔉サウンドボタン -->
-  <div id="sound-btn-area">
-    <button id="sound-btn" class="btn sound" onclick="playSound()" style="display:none;">
-      🔉 Play Sound
-    </button>
-  </div>
+<!-- サウンドボタンをここに移動！ -->
+<div id="sound-btn-area">
+  <button id="sound-btn" class="btn sound" onclick="playSound()" style="visibility: hidden;">
+    🔉 Play Sound
+  </button>
+</div>
 
-  <!-- ⬅️➡️ナビゲーションボタン -->
-  <div id="nav-buttons">
-    <button class="btn nav" onclick="prevWord()">← Prev</button>
-    <button class="btn nav" onclick="nextWord()">Next →</button>
-  </div>
+<!-- ナビゲーションボタンは別divで保持 -->
+<div id="nav-buttons">
+  <button class="btn nav" onclick="prevWord()">← Prev</button>
+  <button class="btn nav" onclick="nextWord()">Next →</button>
+</div>
+
 
   <!-- イラスト表示ボタン（必要なら表示） -->
   <div id="show-btn-area">
