@@ -3,7 +3,7 @@ body {
   font-family: 'Andika', sans-serif;
   text-align: center;
   background: #e0f7fa;         /* CUD風のやさしい水色 */
-  color: #333;                 /* 読みやすい濃グレー */
+  color: #333;
   padding: 2em;
 }
 
@@ -58,7 +58,7 @@ button.nav:hover {
   background-color: #4FC3F7;
 }
 
-/* 📸イラストボタン（たまご色・スペース確保） */
+/* 📸イラストボタン */
 #show-image-btn {
   visibility: hidden;
   display: inline-block;
@@ -72,15 +72,18 @@ button.nav:hover {
   cursor: pointer;
 }
 
-/* ボタン配置エリア */
+/* 🔉 サウンドボタンの配置エリア */
 #sound-btn-area {
   text-align: center;
   margin: 20px 0;
+  min-height: 60px; /* ボタンが非表示でも空間確保 */
 }
 
+/* ⬅️➡️ ナビゲーションボタン配置 */
 #nav-buttons {
   display: flex;
   justify-content: space-between;
   padding: 0 30px;
   margin-top: 10px;
 }
+
