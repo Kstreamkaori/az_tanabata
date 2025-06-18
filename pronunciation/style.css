@@ -63,6 +63,18 @@ button.nav:hover {
   margin: 10px 0;
 }
 
+/* サウンドボタンだけ色変更（黄緑） */
+#sound-btn {
+  background-color: #b7e86b;  /* 明るめのきみどり */
+  color: #000;
+  border: 2px solid #9acd32;  /* 濃いめのきみどり */
+}
+
+#sound-btn:hover {
+  background-color: #a4dc4e;  /* ホバーでちょっと濃く */
+}
+
+
 #show-image-btn {
   visibility: hidden;         /* ← ボタンを隠すけどスペースは確保 */
   display: inline-block;      /* ← 中央寄せのために block → inline-block に */
