@@ -76,8 +76,9 @@ button.nav:hover {
 #sound-btn-area {
   text-align: center;
   margin: 20px 0;
-  min-height: 60px; /* ボタンが非表示でも空間確保 */
+  min-height: 80px; /* ← ここを増やすことで安定！ */
 }
+
 
 /* ⬅️➡️ ナビゲーションボタン配置 */
 #nav-buttons {
