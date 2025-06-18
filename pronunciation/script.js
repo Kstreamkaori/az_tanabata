@@ -68,12 +68,15 @@ function typeWriter(wordData, callback) {
       setTimeout(type, 600);
     } else {
       if (typeof callback === "function") callback();
-      document.getElementById("sound-btn").style.visibility = "visible"; // ← visibilityに変更
+      setTimeout(() => {
+        document.getElementById("sound-btn").style.visibility = "visible";
+      }, 1500); // ← ここでディレイ！
     }
   }
 
   type();
 }
+
 
 window.onload = () => {
   shuffleWords();
