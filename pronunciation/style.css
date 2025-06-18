@@ -83,8 +83,8 @@ button.nav:hover {
 /* ⬅️➡️ ナビゲーションボタン配置 */
 #nav-buttons {
   display: flex;
-  justify-content: space-between;
-  padding: 0 30px;
+  justify-content: center;      /* ← これで中央寄せ */
+  gap: 40px;                    /* ← ボタン同士の距離だけ確保 */
   margin-top: 10px;
 }
 
