@@ -16,6 +16,11 @@ const data = [
   { word: "taps", sound: "taps.mp3" },
   { word: "tin", sound: "tin.mp3" },
   { word: "up", sound: "up_tanabata.mp3" },
+  // --- フェイク語（ここから） ---
+  { word: "fop", sound: "fop.mp3", isFake: true },
+  { word: "bin", sound: "bin.mp3", isFake: true },
+  { word: "pet", sound: "pet.mp3", isFake: true },
+  { word: "bocket", sound: "bocket.mp3", isFake: true }
 
 
 ];
