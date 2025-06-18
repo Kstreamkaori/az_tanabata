@@ -27,6 +27,8 @@ function showWord() {
   const wordData = data[current];
 
   wordEl.innerHTML = "";
+  document.getElementById("sound-btn").style.display = "none"; // タイピング中は非表示
+
   typeWriter(wordData);
 }
 
