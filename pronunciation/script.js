@@ -24,13 +24,12 @@ let current = 0;
 
 function showWord() {
   const wordEl = document.getElementById("word");
-  const imageEl = document.getElementById("image");
+  
   const showBtn = document.getElementById("show-image-btn");
   const wordData = data[current];
 
   wordEl.innerHTML = "";
-  imageEl.src = ""; // ← ★ここで前の画像をリセット！
-  imageEl.style.visibility = "hidden";
+
 
   // ↓ 追加（スペースを残してボタン非表示にしない）
   showBtn.style.visibility = "visible";
