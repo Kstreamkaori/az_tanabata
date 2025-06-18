@@ -10,30 +10,27 @@
 <body>
   <h1>Let's Read!</h1>
 
- <!-- 単語表示エリア -->
-<div id="word-area">
-  <div id="word"></div>
-</div>
+  <!-- 単語表示エリア -->
+  <div id="word-area">
+    <div id="word"></div>
+  </div>
 
-<!-- サウンドボタン -->
-<div id="sound-btn-area">
-  <button id="sound-btn" class="btn sound" onclick="playSound()" style="visibility: hidden;">
-    🔉 Play Sound
-  </button>
-</div>
+  <!-- 🔉 サウンドボタン -->
+  <div id="sound-btn-area">
+    <button id="sound-btn" class="btn sound" onclick="playSound()">
+      🔉 Play Sound
+    </button>
+  </div>
 
-<!-- ナビボタン -->
-<div id="nav-buttons">
-  <div class="nav-wrap">
+  <!-- ⬅️➡️ ナビボタン -->
+  <div id="nav-buttons">
     <button class="btn nav" onclick="prevWord()">← Prev</button>
     <button class="btn nav" onclick="nextWord()">Next →</button>
   </div>
-</div>
 
-
-  <!-- イラスト表示ボタン（必要なら表示） -->
+  <!-- 📸 イラスト表示ボタン（必要なら表示） -->
   <div id="show-btn-area">
-    <button id="show-image-btn" class="btn" onclick="showImage()" style="display:none;">
+    <button id="show-image-btn" class="btn" onclick="showImage()">
       Show Image
     </button>
   </div>
