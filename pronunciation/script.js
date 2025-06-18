@@ -23,7 +23,8 @@ const data = [
   { word: "bocket", sound: "bocket.mp3", isFake: true }
 ];
 
-let current = 0;
+let current = Math.floor(Math.random() * data.length);
+
 
 function showWord() {
   const wordEl = document.getElementById("word");
