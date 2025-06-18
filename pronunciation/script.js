@@ -20,35 +20,40 @@ const data = [
   { word: "fop", sound: "fop.mp3", isFake: true },
   { word: "bin", sound: "bin.mp3", isFake: true },
   { word: "pet", sound: "pet.mp3", isFake: true },
-  { word: "bocket", sound: "bocket.mp3", isFake: true }
+  { word: "bocket", sound: "bocket.mp3", chunks: ["b", "o", "ck", "e", "t"], isFake: true }
 ];
 
-let current = Math.floor(Math.random() * data.length);
+let shuffled = [];
+let current = 0;
 
+function shuffleWords() {
+  shuffled = [...data].sort(() => Math.random() - 0.5);
+  current = 0;
+}
 
 function showWord() {
   const wordEl = document.getElementById("word");
-  const wordData = data[current];
+  const wordData = shuffled[current];
 
   wordEl.innerHTML = "";
-  document.getElementById("sound-btn").style.display = "none"; // タイピング中は非表示
+  document.getElementById("sound-btn").style.display = "none";
 
   typeWriter(wordData);
 }
 
 function playSound() {
-  const wordData = data[current];
+  const wordData = shuffled[current];
   const audio = new Audio(`sounds/${wordData.sound}`);
   audio.play();
 }
 
 function prevWord() {
-  current = (current - 1 + data.length) % data.length;
+  current = (current - 1 + shuffled.length) % shuffled.length;
   showWord();
 }
 
 function nextWord() {
-  current = (current + 1) % data.length;
+  current = (current + 1) % shuffled.length;
   showWord();
 }
 
@@ -71,4 +76,7 @@ function typeWriter(wordData, callback) {
   type();
 }
 
-window.onload = showWord;
+window.onload = () => {
+  shuffleWords();
+  showWord();
+};
