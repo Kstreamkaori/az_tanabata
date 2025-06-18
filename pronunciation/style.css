@@ -25,9 +25,8 @@ body {
 }
 
 
-button.play {
-  background-color: #4CAF50;
-  color: white;
+/* 共通のボタンスタイル */
+button.btn {
   border: none;
   border-radius: 8px;
   padding: 10px 20px;
@@ -35,44 +34,27 @@ button.play {
   cursor: pointer;
 }
 
-button.play:hover {
-  background-color: #45A049;
-}
-
+/* ナビボタン（青） */
 button.nav {
   background-color: #81D4FA;
   color: #333;
-  border: none;
-  border-radius: 8px;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
 }
 
 button.nav:hover {
   background-color: #4FC3F7;
 }
 
-
-#nav-buttons {
-  margin-top: 20px;
-}
-
-#show-btn-area {
-  text-align: center;
-  margin: 10px 0;
-}
-
-/* サウンドボタンだけ色変更（黄緑） */
-#sound-btn {
-  background-color: #b7e86b;  /* 明るめのきみどり */
+/* サウンドボタン（ナビと同じ形で色だけ黄緑） */
+button.play.sound {
+  background-color: #b7e86b;
   color: #000;
-  border: 2px solid #9acd32;  /* 濃いめのきみどり */
+  border: 2px solid #9acd32;
 }
 
-#sound-btn:hover {
-  background-color: #a4dc4e;  /* ホバーでちょっと濃く */
+button.play.sound:hover {
+  background-color: #a4dc4e;
 }
+
 
 
 #show-image-btn {
