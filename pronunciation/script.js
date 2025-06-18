@@ -1,21 +1,21 @@
 const data = [
 
-  { word: "clips", sound: "sounds/clips.mp3" },
-  { word: "fog", sound: "sounds/fog.mp3" },
-  { word: "frog", sound: "sounds/frog.mp3" },
-  { word: "gets", sound: "sounds/gets_tanabata.mp3" },
-  { word: "in", sound: "sounds/in.mp3" },
-  { word: "is", sound: "sounds/is.mp3" },
-  { word: "kid", sound: "sounds/kid.mp3" },
-  { word: "off", sound: "sounds/off.mp3" },
-  { word: "pen", sound: "sounds/pen.mp3" },
-  { word: "picks", sound: "sounds/picks.mp3" },
-  { word: "pin", sound: "sounds/pin.mp3" },
-  { word: "pocket", sound: "sounds/pocket.mp3" },
-  { word: "tag", sound: "sounds/tag.mp3" },
-  { word: "taps", sound: "sounds/taps.mp3" },
-  { word: "tin", sound: "sounds/tin.mp3" },
-  { word: "up", sound: "sounds/up_tanabata.mp3" },
+  { word: "clips", sound: "clips.mp3" },
+  { word: "fog", sound: "fog.mp3" },
+  { word: "frog", sound: "frog.mp3" },
+  { word: "gets", sound: "gets_tanabata.mp3" },
+  { word: "in", sound: "in.mp3" },
+  { word: "is", sound: "is.mp3" },
+  { word: "kid", sound: "kid.mp3" },
+  { word: "off", sound: "off.mp3" },
+  { word: "pen", sound: "pen.mp3" },
+  { word: "picks", sound: "picks.mp3" },
+  { word: "pin", sound: "pin.mp3" },
+  { word: "pocket", sound: "pocket.mp3" },
+  { word: "tag", sound: "tag.mp3" },
+  { word: "taps", sound: "taps.mp3" },
+  { word: "tin", sound: "tin.mp3" },
+  { word: "up", sound: "up_tanabata.mp3" },
 
 
 ];
@@ -43,7 +43,7 @@ function showWord() {
 
 function playSound() {
   const wordData = data[current];
-  const audio = new Audio(`sounds/${wordData.sound}`);
+  const audio = new Audio(wordData.sound);
   audio.play();
 }
 
