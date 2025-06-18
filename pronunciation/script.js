@@ -24,18 +24,12 @@ let current = 0;
 
 function showWord() {
   const wordEl = document.getElementById("word");
-  const showBtn = document.getElementById("show-image-btn");
   const wordData = data[current];
 
   wordEl.innerHTML = "";
-
-  showBtn.style.visibility = "visible";
-  showBtn.style.display = "none"; // タイピングが終わるまで非表示
-
-  typeWriter(wordData, function () {
-    showBtn.style.display = "block";
-  });
+  typeWriter(wordData);
 }
+
 
 function playSound() {
   const wordData = data[current];
@@ -71,7 +65,7 @@ console.log(wordData.word);
       setTimeout(type, 600);
     } else {
       if (typeof callback === "function") callback();
-      document.getElementById("show-image-btn").style.display = "block"; // タイプ完了後ボタン出す
+    
     }
   }
 
