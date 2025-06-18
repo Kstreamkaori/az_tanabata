@@ -20,7 +20,7 @@ const data = [
   { word: "fop", sound: "fop.mp3", isFake: true },
   { word: "bin", sound: "bin.mp3", isFake: true },
   { word: "pet", sound: "pet.mp3", isFake: true },
-  { word: "bocket", sound: "bocket.mp3", isFake: true, chunks: ["p", "o", "ck", "e", "t"] }
+  { word: "bocket", sound: "bocket.mp3", isFake: true }
 ];
 
 let current = Math.floor(Math.random() * data.length);
