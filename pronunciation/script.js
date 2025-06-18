@@ -60,6 +60,10 @@ function nextWord() {
 
 
 function typeWriter(wordData, callback) {
+  console.log(wordData);
+console.log(wordData.word);
+
+  
   const wordEl = document.getElementById("word");
   const chunks = wordData.chunks || wordData.word.split("");
   let i = 0;
