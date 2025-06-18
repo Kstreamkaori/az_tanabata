@@ -1,3 +1,4 @@
+// --- 単語データ ---
 const data = [
   { word: "clips", sound: "clips.mp3" },
   { word: "fog", sound: "fog.mp3" },
@@ -15,8 +16,6 @@ const data = [
   { word: "taps", sound: "taps.mp3" },
   { word: "tin", sound: "tin.mp3" },
   { word: "up", sound: "up_tanabata.mp3" },
-
-  // --- フェイク語 ---
   { word: "fop", sound: "fop.mp3", isFake: true },
   { word: "bin", sound: "bin.mp3", isFake: true },
   { word: "pet", sound: "pet.mp3", isFake: true },
@@ -36,7 +35,7 @@ function showWord() {
   const wordData = shuffled[current];
 
   wordEl.innerHTML = "";
-  document.getElementById("sound-btn").style.display = "none";
+  document.getElementById("sound-btn").style.visibility = "hidden"; // ← visibilityに変更
 
   typeWriter(wordData);
 }
@@ -69,7 +68,7 @@ function typeWriter(wordData, callback) {
       setTimeout(type, 600);
     } else {
       if (typeof callback === "function") callback();
-      document.getElementById("sound-btn").style.display = "inline-block";
+      document.getElementById("sound-btn").style.visibility = "visible"; // ← visibilityに変更
     }
   }
 
