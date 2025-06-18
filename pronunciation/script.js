@@ -70,7 +70,7 @@ function typeWriter(wordData, callback) {
       if (typeof callback === "function") callback();
       setTimeout(() => {
         document.getElementById("sound-btn").style.visibility = "visible";
-      }, 1500); // ← ここでディレイ！
+      }, 3000); // ← ここでディレイ！
     }
   }
 
