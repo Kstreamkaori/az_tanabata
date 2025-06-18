@@ -24,19 +24,16 @@ let current = 0;
 
 function showWord() {
   const wordEl = document.getElementById("word");
-  
   const showBtn = document.getElementById("show-image-btn");
   const wordData = data[current];
 
   wordEl.innerHTML = "";
 
-
-  // ↓ 追加（スペースを残してボタン非表示にしない）
   showBtn.style.visibility = "visible";
+  showBtn.style.display = "none"; // タイピングが終わるまで非表示
 
   typeWriter(wordData, function () {
-    // 絵を見るボタンが出る処理
-    document.getElementById("show-image-btn").style.display = "block";
+    showBtn.style.display = "block";
   });
 }
 
