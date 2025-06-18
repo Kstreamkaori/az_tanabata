@@ -9,7 +9,7 @@ const data = [
   { word: "kid", sound: "kid.mp3" },
    { word: "off", sound: "off.mp3", chunks: ["o", "ff"] },
   { word: "pen", sound: "pen.mp3" },
-  { word: "picks", sound: "picks.mp3", chunks: ["p", "i", "ck", "s"] }
+  { word: "picks", sound: "picks.mp3", chunks: ["p", "i", "ck", "s"] },
   { word: "pin", sound: "pin.mp3" },
   { word: "pocket", sound: "pocket.mp3", chunks: ["p", "o", "ck", "e", "t"] },
   { word: "tag", sound: "tag.mp3" },
