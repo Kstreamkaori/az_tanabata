@@ -15,32 +15,27 @@
     <div id="word"></div>
   </div>
 
+  <!-- 🔉サウンドボタン -->
+  <div id="sound-btn-area">
+    <button id="sound-btn" class="btn sound" onclick="playSound()" style="display:none;">
+      🔉 Play Sound
+    </button>
+  </div>
 
+  <!-- ⬅️➡️ナビゲーションボタン -->
+  <div id="nav-buttons">
+    <button class="btn nav" onclick="prevWord()">← Prev</button>
+    <button class="btn nav" onclick="nextWord()">Next →</button>
+  </div>
 
-
-  
-<!-- イラスト表示ボタン -->
-<div id="show-btn-area">
-  <button id="show-image-btn" onclick="showImage()" style="display:none;">Show image</button>
-</div>
-
-<!-- ナビゲーションボタン -->
-<div id="nav-buttons">
-  <button class="nav" onclick="prevWord()">← Prev</button>
-  <button class="nav" onclick="nextWord()">Next →</button>
-<!-- サウンドボタン（音声チェック） -->
-<button id="sound-btn" class="btn play sound" onclick="playSound()" style="display:none;">
-  🔊 Check Sound
-</button>
-
-
-
-</div>
-
+  <!-- イラスト表示ボタン（必要なら表示） -->
+  <div id="show-btn-area">
+    <button id="show-image-btn" class="btn" onclick="showImage()" style="display:none;">
+      Show Image
+    </button>
+  </div>
 
   <!-- JavaScript -->
   <script src="script.js"></script>
- 
-  
 </body>
 </html>
