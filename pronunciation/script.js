@@ -1,127 +1,23 @@
 const data = [
-  {
-    word: "tag",
-    image: "assets/tag.png"
-  },
-  {
-    word: "in",
-    image: "assets/in.png"
-  },
-  {
-    word: "fog",
-    image: "assets/fog.png"
-  },
-  {
-    word: "a",
-    image: "assets/a.png"
-  },
-  {
-    word: "pin",
-    image: "assets/pin.png"
-  },
-  {
-    word: "in",
-    image: "assets/in.png"
-  },
-  {
-    word: "a",
-    image: "assets/a.png"
-  },
-  {
-    word: "tin",
-    image: "assets/tin.png"
-  },
-  {
-    word: "a",
-    image: "assets/a.png"
-  },
-  {
-    word: "kid",
-    image: "assets/kid.png"
-  },
-  {
-    word: "gets",
-    image: "assets/get.png"
-  },
-  {
-    word: "a",
-    image: "assets/a.png"
-  },
-  {
-    word: "tag",
-    image: "assets/tag.png"
-  },
-  {
-    word: "frog",
-    image: "assets/frog.png"
-  },
-  {
-    word: "picks",
-    chunks: ["pi", "ck", "s"],
-    image: "assets/pick.png"
-  },
-  {
-    word: "up",
-    image: "assets/up.png"
-  },
-  {
-    word: "a",
-    image: "assets/a.png"
-  },
-  {
-    word: "pen",
-    image: "assets/pen.png"
-  },
-  {
-    word: "a",
-    image: "assets/a.png"
-  },
-  {
-    word: "kid",
-    image: "assets/kid.png"
-  },
-  {
-    word: "clips",
-    image: "assets/clip.png"
-  },
-  {
-    word: "a",
-    image: "assets/a.png"
-  },
-  {
-    word: "tag",
-    image: "assets/tag.png"
-  },
-  {
-    word: "frog",
-    image: "assets/frog.png"
-  },
-  {
-    word: "taps",
-    image: "assets/tap.png"
-  },
-  {
-    word: "a",
-    image: "assets/a.png"
-  },
-  {
-    word: "pocket",
-    chunks: ["po", "ck", "e", "t"],
-    image: "assets/pocket.png"
-  },
-  {
-    word: "fog",
-    image: "assets/fog.png"
-  },
-  {
-    word: "is",
-    image: "assets/is.png"
-  },
-  {
-    word: "off",
-    chunks: ["o", "ff"],
-    image: "assets/off.png"
-  }
+
+  { word: "clips", sound: "sounds/clips.mp3" },
+  { word: "fog", sound: "sounds/fog.mp3" },
+  { word: "frog", sound: "sounds/frog.mp3" },
+  { word: "gets", sound: "sounds/gets_tanabata.mp3" },
+  { word: "in", sound: "sounds/in.mp3" },
+  { word: "is", sound: "sounds/is.mp3" },
+  { word: "kid", sound: "sounds/kid.mp3" },
+  { word: "off", sound: "sounds/off.mp3" },
+  { word: "pen", sound: "sounds/pen.mp3" },
+  { word: "picks", sound: "sounds/picks.mp3" },
+  { word: "pin", sound: "sounds/pin.mp3" },
+  { word: "pocket", sound: "sounds/pocket.mp3" },
+  { word: "tag", sound: "sounds/tag.mp3" },
+  { word: "taps", sound: "sounds/taps.mp3" },
+  { word: "tin", sound: "sounds/tin.mp3" },
+  { word: "up", sound: "sounds/up_tanabata.mp3" },
+
+
 ];
 
 let current = 0;
@@ -143,6 +39,12 @@ function showWord() {
     // 絵を見るボタンが出る処理
     document.getElementById("show-image-btn").style.display = "block";
   });
+}
+
+function playSound() {
+  const wordData = data[current];
+  const audio = new Audio(`sounds/${wordData.sound}`);
+  audio.play();
 }
 
 
